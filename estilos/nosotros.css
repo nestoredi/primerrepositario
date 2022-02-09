@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    background-color: #16996d;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 200px;
+}
+header nav ul{
+    text-decoration: none;
+}
+nav ul li{
+    list-style: none;
+    margin: 1rem;
+}
+nav a{
+    color: black;
+    text-decoration:none ;
+}
+ul{
+    display: flex;
+}
+header p{
+    font-size: 50px;
+}
+header span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: yellowgreen;
+}
+footer{
+    background-color: #16996d;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 200px;
+}
+/*------main---*/
+.caja1{
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    grid-template-rows: repeat(2,400px);
+    gap: 10px;
+
+}
+.nos{
+    background-color: tomato;
+    /*width: 150px;
+    height: 150px;*/
+    padding: 10px;
+}
+.nos1{
+grid-column: 1/2;
+grid-row: 1/2;
+border: 5px solid #fff;
+border-radius: 25px;margin: 2px;
+background-image: url(../imagenes/cuadroTareas.jpg);
+background-position: center;
+background-size: cover;
+}
+.nos2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 5px solid #fff;
+    border-radius: 25px;
+    margin: 2px;
+    background-image: url(../imagenes/equipo2.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+.nos3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 5px solid #fff;
+    border-radius: 25px;
+    margin: 2px;
+    background-image: url(../imagenes/PNL.jpg);
+    background-position: center;
+    background-size: cover;
+    } 
+.nos4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 5px solid #fff;
+    border-radius: 25px;
+    margin: 2px;
+    background-image: url(../imagenes/woman-g360ced9c9_640.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+    main div h2{
+        background-color:#fff;
+        text-align: center;
+    }
+    @media only screen and (max-width:768px){
+        .caja{
+            margin: 20px;
+        }
+        .nos, .nos1, .nos2, .nos3, .nos4{
+            padding:10px
+        }
+    }
+    @media only screen and (max-width:850px){
+
+        .caja1{
+            background-color: yellowgreen;
+            display: grid;
+            grid-template-columns:1fr;
+            grid-template-rows: repeat(4,600px);
+            gap: 10px;
+        
+        }
+        .nos1{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            border: 5px solid #fff;
+            border-radius: 25px;margin: 2px;
+            background-image: url(../imagenes/cuadroTareas.jpg);
+            background-position: center;
+            background-size: cover;
+            }
+            .nos2{
+                grid-column: 1/2;
+                grid-row: 2/3;
+                border: 5px solid #fff;
+                border-radius: 25px;
+                margin: 2px;
+                background-image: url(../imagenes/equipo2.jpg);
+                background-position: center;
+                background-size: cover;
+                }
+            .nos3{
+                grid-column: 1/2;
+                grid-row: 3/4;
+                border: 5px solid #fff;
+                border-radius: 25px;
+                margin: 2px;
+                background-image: url(../imagenes/PNL.jpg);
+                background-position: center;
+                background-size: cover;
+                
+                } 
+            .nos4{
+                grid-column: 1/2;
+                grid-row: 4/5;
+                border: 5px solid #fff;
+                border-radius: 25px;
+                margin: 2px;
+                background-image: url(../imagenes/woman-g360ced9c9_640.jpg);
+                background-position: center;
+                background-size: cover;
+                }
+                main div h2{
+                    background-color:#fff;
+                    text-align: center;
+    }     
+    }

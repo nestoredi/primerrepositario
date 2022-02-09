@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    background-color: #16996d;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 200px;
+    
+}
+header nav ul{
+    text-decoration: none;
+}
+nav ul li{
+    list-style: none;
+    margin: 1rem;
+}
+nav a{
+    color: black;
+    text-decoration:none ;
+}
+ul{
+    display: flex;
+}
+header p{
+    font-size: 50px;
+}
+header span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: yellowgreen;
+}
+h1{
+    color: orangered;
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0e7251;
+}
+footer{
+    background-color: #16996d;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 200px;
+    
+}
+footer ul li{
+    margin:1rem;
+    list-style: none;
+}
+footer span{
+    text-align: justify;
+    font-size: 25px;
+}
+
+.bloger{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 400px 300px 300px 300px;
+    gap: 10px;
+}
+.blog{
+    background-color: darksalmon;
+    
+}
+
+.blog1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: blueviolet;
+    border: 5px solid black;
+    background-image: url(/imagenes/carne1.webp);
+}
+.blog2{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-color: blueviolet;
+    border: 5px solid black;
+    background-image: url(/imagenes/carne.webp);
+    background-position: center;
+    background-size: cover;
+    padding-top: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.blog2 p{
+    color: rgb(223, 236, 149);
+    font-weight: bolder;
+}
+.blog3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: blueviolet;
+    border: 5px solid black;
+    background: url(/imagenes/carne2.webp);
+}
+.blog4{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-color: rgb(235, 231, 238);
+    border: 5px solid black;
+    padding: 20px;
+}
+.blog5{
+    grid-column: 1/4;
+    grid-row: 4/5;
+    background-color: rgb(235, 231, 238);
+    border: 5px solid black;
+    padding: 20px;
+}
+@media only screen and (max-width:729px) and (min-width:1024px){
+    
+    .bloger{
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 400px 300px 300px 300px;
+        gap: 10px;
+    }
+    .blog{
+        background-color: darksalmon;
+        /*width: 120px;
+        height: 120px;*/
+    }
+    
+    .blog1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        background-color: blueviolet;
+        border: 5px solid black;
+        background-image: url(/imagenes/carne1.webp);
+    }
+    .blog2{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        background-color: blueviolet;
+        border: 5px solid black;
+        background-image: url(/imagenes/carne.webp);
+        background-position: center;
+        background-size: cover;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .blog2 p{
+        color: white;
+        font-weight: bolder;
+    }
+    .blog3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: blueviolet;
+        border: 5px solid black;
+        background: url(/imagenes/carne2.webp);
+    }
+    .blog4{
+        grid-column: 2/4;
+        grid-row: 3/4;
+        background-color: rgb(235, 231, 238);
+        border: 5px solid black;
+        padding: 20px;
+    }
+    .blog5{
+        grid-column: 1/4;
+        grid-row: 4/5;
+        background-color: rgb(235, 231, 238);
+        border: 5px solid black;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width:320px){   
+    
+    .bloger{
+        background-color: aqua;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(5,400px)
+        
+    }
+    .blog{
+        background-color: darksalmon;
+        /*width: 120px;
+        height: 120px;*/
+    }
+    
+    .blog1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: blueviolet;
+        border: 5px solid black;
+        background-image: url(/imagenes/carne1.webp);
+        padding: 10px;
+    }
+    .blog1 h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .blog2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: blueviolet;
+        border: 5px solid black;
+        background-image: url(/imagenes/carne.webp);
+        background-position: center;
+        background-size: cover;
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .blog2 p{
+        color: white;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+    .blog3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: blueviolet;
+        border: 5px solid black;
+        background: url(/imagenes/carne2.webp);
+    }
+    .blog4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-color: rgb(235, 231, 238);
+        border: 5px solid black;
+        padding: 20px;
+    }
+    .blog4 p{
+        font-size: 12px;
+    }
+    .blog5{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        background-color: rgb(235, 231, 238);
+        border: 5px solid black;
+        padding: 20px;
+    }
+    .blog5 p{
+        font-size: 12px;
+    } 
+}
+@media only screen and (min-width:321px) and (max-width:728px)  {   
+    
+    .bloger{
+        background-color: aqua;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(5,400px)
+        
+    }
+    .blog{
+        background-color: darksalmon;
+        /*width: 120px;
+        height: 120px;*/
+    }
+    
+    .blog1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: blueviolet;
+        border: 5px solid black;
+        background-image: url(/imagenes/carne1.webp);
+        padding: 10px;
+    }
+    .blog1 h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .blog2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: blueviolet;
+        border: 5px solid black;
+        background-image: url(/imagenes/carne.webp);
+        background-position: center;
+        background-size: cover;
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .blog2 p{
+        color: white;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+    .blog3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: blueviolet;
+        border: 5px solid black;
+        background: url(/imagenes/carne2.webp);
+    }
+    .blog4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-color: rgb(235, 231, 238);
+        border: 5px solid black;
+        padding: 20px;
+    }
+    .blog4 p{
+        font-size: 12px;
+    }
+    .blog5{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        background-color: rgb(235, 231, 238);
+        border: 5px solid black;
+        padding: 20px;
+    }
+    .blog5 p{
+        font-size: 12px;
+    } 
+}
