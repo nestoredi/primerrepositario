@@ -5,6 +5,7 @@
 }
 header{
     background-color: #16996d;
+    background-image: linear-gradient(to left,#16996d,#24e624, #42665a);
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -27,16 +28,39 @@ nav a{
 ul{
     display: flex;
 }
-header p{
+.logo{
+    height: 75px;
+    width: 75px;
+    background:repeating-radial-gradient(orange 10%,orangered 30%,black 40%);
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    animation-name: giragira;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-direction:normal;
+}
+@keyframes giragira {
+    0%{
+        transform: rotatey(0deg);
+    }
+    100%{
+        transform: rotatey(360deg);
+        }
+}
+
+/*header p{
     font-size: 50px;
 }
 header span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     background-color: yellowgreen;
-}
+}*/
 footer{
     background-color: #16996d;
+    background-image: linear-gradient(to left,#16996d,#24e624, #42665a);
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -65,7 +89,7 @@ grid-column: 1/2;
 grid-row: 1/2;
 border: 5px solid #fff;
 border-radius: 25px;margin: 2px;
-background-image: url(../imagenes/cuadroTareas.jpg);
+background-image: url(../imagenes/business-man-g1cbd19e97_1920.jpg);
 background-position: center;
 background-size: cover;
 }
@@ -85,7 +109,7 @@ background-size: cover;
     border: 5px solid #fff;
     border-radius: 25px;
     margin: 2px;
-    background-image: url(../imagenes/PNL.jpg);
+    background-image: url(../imagenes/enfoque.jpg);
     background-position: center;
     background-size: cover;
     } 
@@ -126,7 +150,7 @@ background-size: cover;
             grid-row: 1/2;
             border: 5px solid #fff;
             border-radius: 25px;margin: 2px;
-            background-image: url(../imagenes/cuadroTareas.jpg);
+            background-image: url(../imagenes/business-man-g1cbd19e97_1920.jpg);
             background-position: center;
             background-size: cover;
             }
